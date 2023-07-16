@@ -102,6 +102,71 @@ main {
   left: 60px;
 }
 
+.award-container {
+  display: flex;
+  justify-content: space-around;
+}
+.awardlist {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  width: 241.831px;
+  height: 241.831px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.award-heading {
+  color: var(--dark-02, #424242);
+  font-size: 45px;
+  font-weight: 600;
+}
+.award-para {
+  color: var(--dark-03, #727272);
+  font-weight: 600;
+}
+.font-para {
+  color: var(--dark-03, #727272);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sponser {
+  text-align: center;
+  margin-top: 180px;
+}
+.sponser-image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+.sponser-head {
+  color: var(--dark-01, #131313);
+  font-size: 45px;
+  font-weight: 700;
+}
+.sponser-para {
+  color: var(--dark-03, #727272);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 33rem;
+  margin: auto;
+}
+.copyright-container {
+  margin-bottom: 170px;
+}
+.copyright-content {
+  background-color: #fff4e7;
+  width: 1440px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 576px) {
   main {
     padding: 0;
@@ -155,6 +220,42 @@ main {
   .btn-under {
     font-size: 0;
     font-weight: normal;
+  }
+  /* main section list style end */
+  /* now start the award list style */
+  .award-container {
+    flex-direction: column;
+  }
+  .awardlist {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .font-para {
+    text-align: center;
+  }
+  .font-head {
+    text-align: center;
+  }
+  .paramoy {
+    margin-top: 20px;
+  }
+  /* now start the sponser list style */
+  .sponser-image-container {
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 50px;
+  }
+  .sponser-para {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .copyright-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
